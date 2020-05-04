@@ -55,7 +55,7 @@ public class Week1_Group_Anagrams {
             arr[s.charAt(i) - 'a']++;
         
         for(int i=0; i<arr.length; i++)
-            sb.append(arr[i] + "#");
+            sb.append(arr[i] + "#");        // generates hash key for a string based on the count. Ex: eg: "ate" = 1#0#0#..1#(at 'e') ..0# ..1#(at 't')....#0
         
         return sb.toString();
             
