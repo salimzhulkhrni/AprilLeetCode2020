@@ -21,7 +21,7 @@ public class Week1_Max_Sum_SubArray {
             return 0;
         
         
-        // Logic - currSum so far is the max of (sum of the nums till now, number at the current position). Use maxSumSoFar to track if currSum > maxSumSoFar encountered. 
+        // Kadane's algorithm. Logic - currSum so far is the max of (sum of the nums till now, number at the current position). Use maxSumSoFar to track if currSum > maxSumSoFar encountered. 
         // If yes, currSum becomes the maxSumSoFar, if not maxSumSoFar is the sum tracked so far
         
         int currSum = nums[0];
